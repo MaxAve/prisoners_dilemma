@@ -12,8 +12,8 @@ class Game:
         ss = [""] * 4
         for action in self.game:
             if action[0] == COOPERATE and action[1] == COOPERATE:
-                ss[0] += "+5 "
-                ss[3] += "+5 "
+                ss[0] += "+3 "
+                ss[3] += "+3 "
             elif action[0] == STEAL and action[1] == COOPERATE:
                 ss[0] += "+5 "
                 ss[3] += " 0 "
@@ -44,8 +44,8 @@ class Game:
         points = [0, 0]
         for action in self.game:
             if action[0] == COOPERATE and action[1] == COOPERATE:
-                points[0] += 5
-                points[1] += 5
+                points[0] += 3
+                points[1] += 3
             elif action[0] == STEAL and action[1] == COOPERATE:
                 points[0] += 5
             elif action[0] == COOPERATE and action[1] == STEAL:
