@@ -5,3 +5,6 @@ def get_choice(game_history, player_num):
         return game_history[-1][0 if player_num == 1 else 1] # Do whatever the opponent did in the last round
     else:
         return ipd.COOPERATE # Always cooperate on the first round
+    
+def next_round(round_number):
+    pass
